@@ -4,58 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Of Thrones</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Killing Eve</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
-        <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">My list</a></li>
-        </ul>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <i class="fa fa-search" aria-hidden="true"></i>
-        </div>
-    </header>
-    <div class="banner">
-        <img src="./img/banner.jpg" class="bg">
-        <img src="./img/banner3.jpg" class="bg-mobile">
-        <div class="content">
-            <img src="./img/logo-game.png" class="movie-title">
-            <h4>
-                <span>2011</span>
-                <span>18+</span>
-                <span>50–82 min</span>
-                <span>Fantasy</span>
-            </h4>
-            <p>Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.</p>
-            <p><span class="description">Creators</span> David Benioff &#183; D.B. Weiss</p>
-            <p><span class="description">Stars</span> Emilia Clarke &#183; Peter Dinklage &#183; Kit Harington</p>
-            <div class="buttons">
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
-                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My list</a>
+        <div class="container">
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="./img/logo.jpg" alt="Netflix">
+                    </div>
+                        
+                    <div class="buttons">
+                        <a href="netflix.com/signup" class="btn btn-danger">join now</a>
+                        <a href="netflix.com/login" class="btn">sign in</a>
+                    </div>
+                </div>
+                <div class="logo-mob">
+                    <img class="mini-logo" src="./img/N.png" alt="Netflix">
+                    <span class="logo-span">series</span>
+                </div>
+            </nav>
+            <div class="content">
+                <img src="./img/kewhite.png" alt="Killing Eve">
+                <!-- <h3>Killing Eve</h3> -->
+                <p class="text-gray">2018 - present | 18+ | Spy Thriller TV Show</p>
+                <p>Bored with her protection role within the British intelligence agencies, Eve Polastri is overly interested in female assassins, their psychologies and their methods of killing.</p>
+                <p><span class="text-gray">Starring: </span>Sandra Oh, Jodie Comer, Fiona Shaw, Kim Bodnia
+                <span class="text-gray">Creators: </span>Sally Woodward Gentle, Lee Morris</p>
+
+                <a href="#" class="btn btn-danger btn-lg"><i class="fas fa-play"></i>Watch Season 4</a>
             </div>
         </div>
-        <a class="play" onclick="toggleVideo();"><img src="./img/play.svg">Watch trailer</a>
-    </div>
-    <div class="trailer">
-        <video src="./img/trailer.mp4" controls="true"></video>
-        <img class="close" onclick="toggleVideo();" src="./img/close.png" alt="close">
-    </div>
-    <script>
-        function toggleVideo(){
-            const trailer = document.querySelector('.trailer');
-            const video = document.querySelector('video');
-            trailer.classList.toggle('active')
-            video.currentTime = 0;
-            video.pause();
-        }
-    </script>
+    </header>
+    
 </body>
 </html>
