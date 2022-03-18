@@ -111,12 +111,24 @@ header .content p {
     margin-top: 1rem;
     width: 28rem;
 }
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1015px) {
     header {
         background-size: cover;
         background-position-x: left;
     }
 }
+
+
+
 @media screen and (max-width: 768px) {
     .container {
       width: 94%; 
@@ -143,7 +155,7 @@ header .content p {
     }
     header {
       background: url('./img/pic.jpg')
-      no-repeat top 75% left 7%/contain;
+      no-repeat top 45% left 7%/contain;
       background-size: 35%;   
     }
     header {
@@ -164,11 +176,14 @@ header .content p {
         margin-left: 53%;
     }
   }
+
+
 @media screen and (max-width: 630px) {
    p {
     max-width: 90%;
     font-size: 1.9rem;
    }
+   
    header .content {
       margin-top: 0.5rem;
    }
@@ -180,9 +195,11 @@ header .content p {
        max-width: 45%;
    }
    .btn-lg {
-       margin-left: 25%;
+       margin-left: 50%;
    }
 }
+
+
 @media screen and (max-width: 545px) {
     header {
         background: url('./img/ke1.jpg')
@@ -192,37 +209,42 @@ header .content p {
     .mini-logo {
         width: 3rem;
         height: 4.5rem;
-        top: 1.5rem;
+        top: .5rem;
     }
-    
-    header .content img {
-        width: 50%;
-        margin-top: 10rem;
-        margin-left: 25%;
-        margin-bottom: 0.5rem;
-    }
-   
-    header .content p {
-        margin-left: 0;
-        max-width: 90%;   
-    }
-   
-    .btn-lg {
-        margin-left: 0;
-    }
-}
-@media screen and (max-width: 500px) {
     .logo-span {
         display: none;
     }
+    header .content img {
+        width: 60%;
+        margin-top: 14rem;
+        margin-left: 20%;
+        margin-bottom: .5rem;
+    }
+    header .content p {
+        margin-left: 0;
+        max-width: 90%;  
+        text-align: center; 
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-lg {
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    
     .mini-logo {
         width: 2rem;
         height: 3.5rem;
     }
     header .content img {
         width: 50%;
-        margin-top: 8rem;
+        margin-top: 14rem;
         margin-left: 25%;
-        margin-bottom: 0.5rem;
     }
 }
